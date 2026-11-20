@@ -1,0 +1,12 @@
+{
+  "avg_fps": 77.9904563555369,
+  "contract_version": "1.3",
+  "frame_ms_p95": 19.034,
+  "frames": 2339,
+  "load_ms": 2225.6715297699,
+  "os": "Windows",
+  "p1_low_fps": 40.005800841122,
+  "renderer": "Godot 4.5.1-stable (official) / Compatibility OpenGL / Intel(R) Iris(R) Xe Graphics",
+  "vsync_off": true,
+  "peak_mem_mb": 502.359
+}

@@ -1,0 +1,60 @@
+{
+  "flames": 3,
+  "lanterns": [
+    {
+      "deposited": 10,
+      "id": "L1",
+      "lit": true,
+      "pos": [
+        0.0,
+        0.0,
+        23.0
+      ]
+    },
+    {
+      "deposited": 10,
+      "id": "L2",
+      "lit": true,
+      "pos": [
+        21.874,
+        0.0,
+        7.107
+      ]
+    },
+    {
+      "deposited": 10,
+      "id": "L3",
+      "lit": true,
+      "pos": [
+        13.519,
+        0.0,
+        -18.607
+      ]
+    },
+    {
+      "deposited": 10,
+      "id": "L4",
+      "lit": true,
+      "pos": [
+        -13.519,
+        0.0,
+        -18.607
+      ]
+    },
+    {
+      "deposited": 10,
+      "id": "L5",
+      "lit": true,
+      "pos": [
+        -21.874,
+        0.0,
+        7.107
+      ]
+    }
+  ],
+  "score": 1828,
+  "seed": 2026,
+  "state": "won",
+  "ticks": 1860,
+  "time_left_s": 269.0
+}

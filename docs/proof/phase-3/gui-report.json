@@ -1,0 +1,29 @@
+{
+  "failures": 0,
+  "gui_checks": 36,
+  "performance": [
+    {
+      "average_fps": 187.71842236645,
+      "frames": 376,
+      "milliseconds": 2003,
+      "night": 1
+    },
+    {
+      "average_fps": 264.367816091954,
+      "frames": 529,
+      "milliseconds": 2001,
+      "night": 2
+    },
+    {
+      "average_fps": 205.192211682476,
+      "frames": 411,
+      "milliseconds": 2003,
+      "night": 3
+    }
+  ],
+  "renderer": "Intel(R) Iris(R) Xe Graphics",
+  "viewport": [
+    1280,
+    720
+  ]
+}

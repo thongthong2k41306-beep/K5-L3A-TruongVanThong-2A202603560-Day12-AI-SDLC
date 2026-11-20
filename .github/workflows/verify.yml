@@ -1,0 +1,25 @@
+name: Verify Đảo Đèn Lồng
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  contract:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tools/verify.py
+      - name: GUI lifecycle on Linux
+        if: runner.os == 'Linux'
+        run: xvfb-run -a python tools/manage.py gui-test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proof-${{ matrix.os }}
+          path: |
+            docs/proof/phase-4/
+            .tools/test-runs/

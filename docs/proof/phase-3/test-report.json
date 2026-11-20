@@ -1,0 +1,22 @@
+{
+  "tests": 32,
+  "passed": 32,
+  "failures": 0,
+  "errors": 0,
+  "headless_invocations": 72,
+  "wall_seconds": 43.426,
+  "process_wall_seconds": 42.121,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.9",
+  "godot": "Godot_v4.5.1-stable_win64_console.exe",
+  "source_sha256": {
+    "src\\game.gd": "5bf026c224a925f3d791810f0f8a5c2068af399f5c0f20b185cc18dcc66088cc",
+    "src\\headless.gd": "08466c789a0c441589451e18a626bc78db6eaebe776e351a3f3d8e1ec9783218",
+    "src\\minimap.gd": "859642fe741db1e3bc5db66ae52ea37a0fc076e38d1790712e8d50903659fc07",
+    "src\\night_audio.gd": "d5368761bfaad445923644b3f46d4059fade2e8897f1cda0d217411276e77f28",
+    "src\\night_layout.gd": "bd05ab75d23f44ce036beb444a2f3d5cd3f1815cb1e7277f5c3677dc940de3ec",
+    "src\\simulation.gd": "bfc28af961dfe7d24ae617d817f52a1a7079075dedd4b4a019da37886e651d04",
+    "src\\validation.gd": "d5a9fa712c4723e107b250270109a7be09417043f43254e9cf323050670ff629"
+  },
+  "failures_detail": []
+}

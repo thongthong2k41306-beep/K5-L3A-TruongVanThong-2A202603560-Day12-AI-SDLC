@@ -1,0 +1,13 @@
+{
+  "night": 3,
+  "ticks": 18000,
+  "seconds": 3.7591081999999005,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "snapshot_every": 10,
+  "fixture": {
+    "wind_enabled": false,
+    "player": {
+      "invuln_ticks": 18001
+    }
+  }
+}

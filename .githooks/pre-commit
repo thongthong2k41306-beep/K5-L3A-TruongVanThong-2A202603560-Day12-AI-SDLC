@@ -1,0 +1,8 @@
+#!/bin/sh
+# Optional local gate: git config core.hooksPath .githooks
+# Run before staging evidence, or re-stage reports after this gate updates them.
+if command -v python3 >/dev/null 2>&1; then
+  python3 tools/verify.py || exit 1
+else
+  python tools/verify.py || exit 1
+fi

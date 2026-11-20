@@ -1,3 +1,59 @@
+# Đảo Đèn Lồng · v1.0.0
+
+[Chơi thử và kiểm chứng (.mp4)](docs/demo/demo.mp4) · [Ảnh rừng 360°](docs/art/dao-den-long-360.png)
+
+![Cảnh 3D trong game với ba kiểu đèn, cỏ, cây cổ thụ và Mây](docs/proof/phase-4/lanterns.png)
+
+Game 3D Godot 4.5.1 + GDScript. **Bắt đầu hành trình** dẫn Mây qua ba Đêm để giữ đèn sáng tới bình minh. **Khám phá rừng** mở đảo bán kính 60 m với vị trí đèn thay đổi mỗi lần bắt đầu chuyến mới.
+
+## Cài và chạy
+
+Windows x64, macOS hoặc Linux có trình điều khiển OpenGL 3.3. Chạy từ mã nguồn cần Python 3.9 trở lên và Internet ở lần cài Godot đầu tiên. Sau khi clone repo, mở thư mục dự án và chạy hai lệnh trên Windows:
+
+```powershell
+python tools/manage.py build
+python tools/manage.py play
+```
+
+Máy đã có Godot portable có thể mở **Play.cmd**. Trên macOS/Linux dùng `python3` thay cho `python`. Bản ZIP Windows đã đóng gói chỉ cần giải nén rồi mở `DaoDenLong.exe`, không cần Python hoặc Godot Editor. Tự xuất ZIP bằng `python tools/manage.py package` sau khi build.
+
+| Phím | Tác dụng |
+|---|---|
+| WASD / Chuột | Đi / Xoay camera |
+| Space / Shift | Nhảy / Lướt |
+| E / Q | Thắp đèn hoặc châm dầu / Tỏa Sáng |
+| Esc hoặc P | Tạm dừng, mở cài đặt hoặc chơi lại Đêm |
+| R | Chơi lại sau khi thua |
+
+Giữ tối thiểu 3/5, 4/6 hoặc 5/7 đèn tùy Đêm. Thắp lần đầu cần 10 đom đóm, thắp lại cần 5. Đèn dưới 30 dầu mất vùng an toàn. Mỗi lần thắp thành công tăng sức chứa thêm 2, tối đa 20. Trong Cài đặt có đổi phím, bảng màu dễ phân biệt, giảm chuyển động và chữ lớn. Sau khi thua hoặc thắng Đêm 3, nhập tên từ 3–12 ký tự chữ Latin, số hoặc dấu gạch dưới để lưu vào top 10 trên máy.
+
+Mỗi đom đóm nạp cho 5 điểm. Thắp mới cho 100, thắp lại cho 40. Tỏa Sáng trúng Bóng Mực cho 5 điểm nếu không hút dầu, hoặc 15 nếu đang hút. Khi thắng, mỗi đèn sáng cho 50 điểm cộng phần nguyên của lượng dầu, và mỗi Ngọn Lửa còn lại cho 50. Tổng điểm cộng các Đêm đã thắng.
+
+## Kiểm chứng
+
+```sh
+python3 tools/verify.py
+python3 tools/manage.py gui-test
+python3 tools/manage.py headless --seed 2026 --night 3 --ticks 18000 --out result.jsonl
+python3 tools/manage.py bench --seed 42 --duration 30 --out bench.json
+python3 tools/manage.py soak --seed 7 --nights 10 --out soak.json
+python3 tools/manage.py play --export-leaderboard leaderboard.json
+```
+
+Benchmark chạy cửa sổ 1280×720 với VSync tắt. Camera quay quanh Đảo Bến với 200 Bóng Mực, 100 đom đóm và ba đèn đầy dầu. Cỏ, nhân vật và hiệu ứng riêng của bản nghệ thuật được giản lược hoặc tắt trong cảnh đo. Cảnh soak chạy headless và đo RSS của tiến trình Godot.
+
+- [Bằng chứng Phase 4](docs/proof/phase-4/README.md), [ticket và cách đo](docs/notes/phase-4.md), [retro bốn phase](docs/notes/retro-final.md)
+
+- [ADR và tiêu chí Phase 3](docs/notes/phase-3.md), [changelog](CHANGELOG.md) và [bằng chứng Phase 3](docs/proof/phase-3/README.md)
+- [Bằng chứng Phase 2](docs/proof/phase-2/README.md) và [bằng chứng Phase 1](docs/proof/phase-1/README.md)
+- [Test Contract](game.contract.json), [hướng dẫn agent](AGENTS.md), [nhật ký AI](docs/notes/ai-log.md) và [nguồn nội dung](CREDITS.md)
+
+## Sáng tạo của tôi
+
+Rừng có cây cổ thụ, rễ nổi, thảm cỏ nhiều tầng, mái đình và đá phủ rêu. Ba kiểu đèn là đèn giấy treo trên mái, đèn đồng mái cong và đèn sen. Mây mặc áo choàng xanh và đội nón lá. Đom đóm lượn ngang và bay lên trong bản đồ họa. Điểm nhặt trong headless giữ tọa độ chuẩn.
+
+---
+
 # Day 12 — AI SDLC: Đảo Đèn Lồng
 
 > **Cá nhân** (1 người / 1 MSSV) · Áp dụng SDLC cùng AI để xây một **game 3D** qua **4 phase**, từ yêu cầu ban đầu tới bản phát hành.

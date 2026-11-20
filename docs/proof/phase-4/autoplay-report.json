@@ -1,0 +1,75 @@
+{
+  "flames": 0,
+  "lanterns": [
+    {
+      "deposited": 0,
+      "ever_lit": false,
+      "fuel": 0.0,
+      "id": "L1",
+      "lit": false,
+      "pos": [
+        0.0,
+        0.0,
+        25.0
+      ],
+      "relit_count": 0
+    },
+    {
+      "deposited": 0,
+      "ever_lit": false,
+      "fuel": 0.0,
+      "id": "L2",
+      "lit": false,
+      "pos": [
+        23.8,
+        0.0,
+        7.7
+      ],
+      "relit_count": 0
+    },
+    {
+      "deposited": 0,
+      "ever_lit": false,
+      "fuel": 0.0,
+      "id": "L3",
+      "lit": false,
+      "pos": [
+        14.7,
+        0.0,
+        -20.2
+      ],
+      "relit_count": 0
+    },
+    {
+      "deposited": 0,
+      "ever_lit": false,
+      "fuel": 0.0,
+      "id": "L4",
+      "lit": false,
+      "pos": [
+        -14.7,
+        0.0,
+        -20.2
+      ],
+      "relit_count": 0
+    },
+    {
+      "deposited": 10,
+      "ever_lit": true,
+      "fuel": 71.5,
+      "id": "L5",
+      "lit": true,
+      "pos": [
+        -23.8,
+        0.0,
+        7.7
+      ],
+      "relit_count": 0
+    }
+  ],
+  "score": 180,
+  "seed": 2026,
+  "state": "lost",
+  "ticks": 2667,
+  "time_left_s": 195.55
+}

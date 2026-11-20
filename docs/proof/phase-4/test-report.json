@@ -1,0 +1,30 @@
+{
+  "tests": 32,
+  "passed": 32,
+  "failures": 0,
+  "errors": 0,
+  "headless_invocations": 72,
+  "wall_seconds": 48.837,
+  "process_wall_seconds": 46.997,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.9",
+  "godot": "Godot_v4.5.1-stable_win64_console.exe",
+  "source_sha256": {
+    "src\\carved_trim.gd": "5a14fe610e6e2650e40e2b1dfa9af77b8bd86af2c530fc0436b69cf6df67148e",
+    "src\\game.gd": "0d51799ed0ff91f44596fc0b7952d3eee45452f0c467f420861a8619b64996f8",
+    "src\\grass_plume.gd": "280124b7067bbeb7e1a087aac1f4f9b5cc91e6d6493914f07800bc582bcf5e85",
+    "src\\headless.gd": "08466c789a0c441589451e18a626bc78db6eaebe776e351a3f3d8e1ec9783218",
+    "src\\leaderboard.gd": "6689cb2139bea13a3e9c5f880dcf866514808c8fd0e16cd85bde0c12052cd83a",
+    "src\\leaderboard_cli.gd": "8a3a0f6977729881e671ade71e89c16d68e52fca7ad2108880da81f26850d6be",
+    "src\\leaf_crown.gd": "a9362f39f03a9b908f8845dcf85d2ea2634ddd03baf3700b872d0e38fd218abc",
+    "src\\may_costume.gd": "89ccd4b4b6864f1a539332664309d11578602a8811f580336ed0a8c551f280c6",
+    "src\\metrics.gd": "13b5b5296e5bda812b1187cb48a5a1380a68b9ab3431ec3bc8ecfa55cf392024",
+    "src\\minimap.gd": "859642fe741db1e3bc5db66ae52ea37a0fc076e38d1790712e8d50903659fc07",
+    "src\\night_audio.gd": "d5368761bfaad445923644b3f46d4059fade2e8897f1cda0d217411276e77f28",
+    "src\\night_layout.gd": "bd05ab75d23f44ce036beb444a2f3d5cd3f1815cb1e7277f5c3677dc940de3ec",
+    "src\\roof_tiles.gd": "8228ee02e01eea9f91b1293156c8a7d317c5a92aa1ef2b5a909cce3abe8a693f",
+    "src\\simulation.gd": "d5b00099f963119fda839317ac991752f9faf3ed892a489b7cd4c600c91a4f18",
+    "src\\validation.gd": "d5a9fa712c4723e107b250270109a7be09417043f43254e9cf323050670ff629"
+  },
+  "failures_detail": []
+}
